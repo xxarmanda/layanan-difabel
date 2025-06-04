@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C67F43;
+    color: black;
+    background-image: url('bg.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover 5px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+h1, h2 {
+    text-align: center;
+    color: #FFDF7F;
+    margin: 20px 0;
+}
+
+/* Form styling */
+form {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5A2900;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #5A2900;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #431e00;
+}
+
+/* Post section styling */
+section.content {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+section.content .text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+section.content .text h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+section.content .text h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section.content .text h1 a:hover {
+    color: #3498db;
+}
+
+section.content .text p {
+    line-height: 1.6;
+}
+
+section.content .image img {
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+/* Image shake animation on hover */
+section.content .image img:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* Button styling inside posts */
+section.content form {
+    margin-top: 10px;
+}
+
+section.content form button {
+    margin-top: 5px;
+    background-color: #5A2900;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+section.content form button:hover {
+    background-color: #431e00;
+}
+
+/* No posts message */
+p {
+    text-align: center;
+    font-size: 16px;
+    color: #5A2900;
+}

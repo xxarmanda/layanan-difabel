@@ -1,0 +1,200 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS';
+    background-color: #C67F43;
+    color: #fff;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #5A2900;
+    z-index: 1;
+}
+
+nav .logo a {
+    font-size: 16px;
+    font-weight: BOLD;
+    float: left;
+    font-family: helvetica;
+    color: #FFDF7F;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav .menu ul li {
+    float: right;
+}
+
+nav .menu ul li a {
+    color: #FFDF7F;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav .menu ul li img {
+    padding: 0px 16px 0px 16px;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+
+#home {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#home .icon img {
+    width: 300px;
+    height: 300px;
+}
+
+#home h1 {
+    color: #FFDF7F;
+    font-size: 2.5rem;
+}
+
+#home .description {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+#profile, #options {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#profile h2, #options h2 {
+    color: #FFDF7F;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#profile p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#options .disability-options {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#options button {
+    background-color: #5A2900;
+    color: #FFDF7F;
+    padding: 5px 15px;
+    font-size: 2.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: helvetica;
+}
+
+#options button:hover {
+    background-color: #5A2900;
+}
+
+#options button img {
+    margin-top: 5px;
+    padding: 0px 16px 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+footer {
+    background-color: #5A2900;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+
+.footer-content div {
+    max-width: 200px;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+.footer-content p, .footer-content a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    background-color: black;
+    padding: 10px 0;
+}
+.disability-button {
+    background-color: #5A2900;
+    color: #FFDF7F;
+    padding: 10px 25px;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: helvetica;
+}
+
+.disability-button img {
+    width: 30px;
+    height: 30px;
+}
+
+.disability-button:hover {
+    background-color: #4b2200;
+}
